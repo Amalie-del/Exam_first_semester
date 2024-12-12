@@ -386,6 +386,14 @@ body {
     display: block;    /* Ensure it's treated as a block element for centering */
 }
 
+.animation {
+  position: relative;
+  width: 100%;
+  height: auto;
+  justify-content: center;
+  align-items: center;
+}
+
 /*portfolio for phone*/
 @media (max-width: 768px) {
   .portfolio-grid {

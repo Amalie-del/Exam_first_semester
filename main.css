@@ -111,6 +111,22 @@ body.home {
   background-repeat: no-repeat;
 }
 
+/*home for phones*/
+@media (max-width: 768px) {
+  .header-content h1 {
+    font-size: 6rem; /* Slightly smaller heading for smaller screens */
+    margin: 10%;
+  }
+
+}
+
+@media (max-width: 480px) {
+  .header-content h1 {
+    font-size: 6rem;
+  }
+}
+
+
 /* Contact Page Styles */
 body {
   background-color: #252222;
@@ -273,9 +289,17 @@ body {
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
   width: 100%;
-  height: 100%;
+  height: auto;
   background-color: #fcfaf31a;
 }
+
+.portfolio-grid > .grid-gallery {
+  display: grid;
+  aspect-ratio: 1 / 1;
+  align-items: center;
+  justify-items: center;
+}
+
 
 .portfolio-text {
   background: #d1a473;
@@ -397,7 +421,7 @@ body {
 /*portfolio for phone*/
 @media (max-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr)); /* Single-column layout for smaller screens */
+    grid-template-columns: (2, 1fr); /* Single-column layout for smaller screens */
     width: 100%;
     height: auto;
     aspect-ratio: 1;
@@ -424,71 +448,95 @@ body {
 
 
 /* About me */
-.aboutme {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+/* Global Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #252222;
+  color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  max-width: 1200px;
   margin: 0 auto;
-  margin-top: 5%;
-  max-width: 800px;
-  background: linear-gradient(135deg, #d1a473, #fcfaf3);
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  padding: 2rem;
+}
+
+/* About Section */
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 2rem;
 }
 
 .profile-picture {
-    width: 25%;
-    height: auto;
-    margin-top: 10%;
-    object-fit: cover;
-    margin-bottom: 20px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
-.hero h1 {
-    font-family: 'Monsieur La Doulaise', cursive;
-    font-size: 2.5rem;
-    color: #073419;
+.about-text {
+  flex: 1;
 }
 
-.hero .tagline {
-    font-size: 1.2rem;
-    font-style: italic;
-    color: #073419;
-    margin-bottom: 20px;
+.about h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
 }
 
-.details h2, .skills h2 {
-    font-family: 'Roboto', sans-serif;
-    font-size: 1.8rem;
-    color: #073419;
-    margin-bottom: 10px;
+.about p {
+  font-size: 1.2rem;
+  color: #dcdcdc;
 }
 
-.details p {
-    font-size: 1rem;
-    line-height: 1.6;
-    color: #252222;
+/* Skills Section */
+.skills, .programs {
+  text-align: center;
 }
 
-.skills ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
+.skills h2, .programs h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
 }
 
-.skills li {
-    margin: 10px 15px;
-    background: #073419;
-    color: #fcfaf3;
-    padding: 10px 15px;
-    border-radius: 8px;
-    font-size: 0.9rem;
-    margin-bottom: 10%;
+.skill-boxes, .program-boxes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1rem;
+  justify-content: center;
 }
+
+.skill-box, .program-box {
+  padding: 1rem;
+  background-color: #ffb6c1;
+  color: #1e1e1e;
+  border-radius: 8px;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 500;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .about {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .profile-picture {
+      margin: 0 auto;
+  }
+}
+
 
 @media (max-width: 768px) {
     .aboutme {

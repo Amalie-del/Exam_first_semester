@@ -114,7 +114,7 @@ body.home {
 /*home for phones*/
 @media (max-width: 768px) {
   .header-content h1 {
-    font-size: 6rem; /* Slightly smaller heading for smaller screens */
+    font-size: 6rem; 
     margin: 10%;
   }
 
@@ -145,7 +145,7 @@ body {
   padding: 20px 30px;
   max-width: 600px;
   width: 100%;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 12px #252222;
   border-radius: 8px;
   text-align: center;
   margin: 10vh auto 0;
@@ -187,7 +187,7 @@ input, textarea {
 input:focus, textarea:focus {
   outline: none;
   border-color: #073419;
-  box-shadow: 0 0 4px rgba(7, 52, 25, 0.5);
+  box-shadow: 0 0 4px #252222;
 }
 
 textarea {
@@ -286,8 +286,7 @@ body {
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   width: 100%;
   height: auto;
   background-color: #fcfaf31a;
@@ -401,13 +400,13 @@ body {
 
 .video-frame {
     width: 100%;
-    max-width: 560px; /* Match the iframe width in your example */
-    height: 315px;    /* Match the iframe height in your example */
-    border: none;     /* Remove the border */
-    border-radius: 8px; /* Optional: Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: Add a shadow for depth */
-    margin: 20px auto; /* Center the iframe with top/bottom spacing */
-    display: block;    /* Ensure it's treated as a block element for centering */
+    max-width: 560px;
+    height: 315px;
+    border: none;     
+    border-radius: 8px; 
+    box-shadow: 0 4px 8px #252222;
+    margin: 20px auto; 
+    display: block;    
 }
 
 .animation {
@@ -421,18 +420,18 @@ body {
 /*portfolio for phone*/
 @media (max-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: (2, 1fr); /* Single-column layout for smaller screens */
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     width: 100%;
     height: auto;
     aspect-ratio: 1;
   }
 
   .portfolio-text h3 {
-    font-size: 1.2rem; /* Slightly smaller heading for smaller screens */
+    font-size: 1.2rem; 
   }
 
   .portfolio-text p {
-    font-size: 1rem; /* Smaller paragraph text */
+    font-size: 1rem; 
   }
 }
 
@@ -468,8 +467,8 @@ body {
   grid-template-columns: 1fr;
   gap: 2rem;
   max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem;
+  margin: 2rem auto;
+  padding: 3rem;
   height: auto;
 }
 
@@ -525,7 +524,7 @@ body {
   font-size: 1rem;
   text-align: center;
   font-weight: 500;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 8px #252222;
 }
 
 /* Responsive Design */
@@ -564,7 +563,7 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .grid {
-      grid-template-columns: repeat(2, 1fr);
+      grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .slideshow {
@@ -579,5 +578,93 @@ body {
 
   .slideshow {
       aspect-ratio: 1.5 / 1;
+  }
+}
+
+/* Footer Section */
+.footer {
+  background-color: #252222;
+  color: #fcfaf3;
+  padding: 1.5rem 0;
+  font-family: 'Roboto';
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 2rem auto;
+  padding: 0 2rem;
+}
+
+/* Left Section: Contact Info */
+.footer-contact p {
+  margin: 2px;
+  font-size: 0.9rem;
+  padding: 2px;
+}
+
+.footer-contact a {
+  color: #fcfaf3;
+  text-decoration: none;
+}
+
+.footer-contact a:hover {
+  text-decoration: underline;
+}
+
+/* Middle Section: Logo */
+.footer-logo h3 {
+  margin: 0;
+  font-family: 'Monsieur La Doulaise', cursive;
+  font-size: 2.8rem;
+  color: #fcfaf3;
+  text-align: center;
+}
+
+.footer-logo a {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
+  text-align: center; 
+}
+
+.footer__text {
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #fcfaf3; 
+  text-align: center;
+}
+
+
+/* Right Section: Social Links */
+.footer-social {
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-social .social-link {
+  color: #fdcdd6;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+}
+
+.footer-social .social-link:hover {
+  color: #ffb6c1; 
+  text-decoration: underline;
+}
+
+/* Responsive Design for Footer */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .footer-social {
+    justify-content: center;
   }
 }

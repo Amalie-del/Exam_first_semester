@@ -19,22 +19,22 @@ ul {
   background: #d1a473;
 }
 
-.nav-links {
+.nav__links {
   display: flex;
   align-items: center;
   margin: 0 30px;
 }
 
-.nav-links a {
+.nav__links a {
   color: #fcfaf3;
   text-decoration: none;
 }
 
-.nav-links li {
+.nav__links li {
   margin-left: 25px;
 }
 
-.navigationsbar--logo {
+.navigationsbar__logo {
   margin-left: 30px;
   font-family: 'Monsieur La Doulaise';
   font-style: italic;
@@ -66,13 +66,13 @@ header {
   margin: 0;
 }
 
-.header-content {
+.header__content {
   margin-bottom: 150px;
   color: #d1a473;
   text-align: center;
 }
 
-.header-content h1 {
+.header__content h1 {
   font-size: 150px;
   padding-top: 50px;
   margin-left: 50px;
@@ -81,7 +81,7 @@ header {
   font-style: italic;
 }
 
-.header-content h2 {
+.header__content h2 {
   margin-top: 50px;
   margin-bottom: 30px;
   color: #fcfaf3;
@@ -591,7 +591,7 @@ body {
   font-family: 'Roboto';
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -601,23 +601,23 @@ body {
 }
 
 /* Left Section: Contact Info */
-.footer-contact p {
+.footer__contact p {
   margin: 2px;
   font-size: 0.9rem;
   padding: 2px;
 }
 
-.footer-contact a {
+.footer__contact a {
   color: #fcfaf3;
   text-decoration: none;
 }
 
-.footer-contact a:hover {
+.footer__contact a:hover {
   text-decoration: underline;
 }
 
 /* Middle Section: Logo */
-.footer-logo h3 {
+.footer__logo h3 {
   margin: 0;
   font-family: 'Monsieur La Doulaise', cursive;
   font-size: 2.8rem;
@@ -625,7 +625,7 @@ body {
   text-align: center;
 }
 
-.footer-logo a {
+.footer__logo a {
   display: flex; 
   flex-direction: column; 
   align-items: center; 
@@ -641,20 +641,20 @@ body {
 
 
 /* Right Section: Social Links */
-.footer-social {
+.footer__social {
   display: flex;
   gap: 1rem;
 }
 
-.footer-social .social-link {
+.footer__social-link {
   color: #fdcdd6;
   text-decoration: none;
   font-size: 1rem;
   transition: color 0.3s ease;
 }
 
-.footer-social .social-link:hover {
-  color: #ffb6c1; 
+.footer__social-link:hover {
+  color: #fdcdd6; 
   text-decoration: underline;
 }
 

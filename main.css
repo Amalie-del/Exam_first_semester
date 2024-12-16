@@ -324,7 +324,7 @@ body {
   color: #073419;
 }
 
-.portfolio-title {
+.portfolio__title {
   position: absolute;
   top: 20%;
   left: 50%;
@@ -362,26 +362,6 @@ body {
 
 .image-container img.active {
   display: block;
-}
-
-.arrow {
-  cursor: pointer;
-  background: #252222;
-  color: #fff;
-  border: none;
-  padding: 10px;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  z-index: 10
-}
-
-.arrow.left {
-  left: 10px;
-}
-
-.arrow.right {
-  right: 10px;
 }
 
 .grid-gallery {

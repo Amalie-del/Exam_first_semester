@@ -444,7 +444,7 @@ body {
 
 
 /* Container */
-.container {
+.page {
   display: grid;
   grid-template-columns: 1fr;
   gap: 2rem;
@@ -461,13 +461,13 @@ body {
   gap: 2rem;
 }
 
-.profile-picture {
+.about__profile-picture {
   width: 200px;
   height: auto;
   object-fit: cover;
 }
 
-.about-text {
+.about__text {
   flex: 1;
 }
 
@@ -491,14 +491,14 @@ body {
   margin-bottom: 1rem;
 }
 
-.skill-boxes, .program-boxes {
+.skill__list, .program__list {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   gap: 1rem;
   justify-content: center;
 }
 
-.skill-box, .program-box {
+.skill__item, .program__item {
   padding: 1rem;
   background-color: #ffb6c1;
   color: #073419;

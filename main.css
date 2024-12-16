@@ -140,7 +140,7 @@ body {
   min-height: 100vh;
 }
 
-.contact-container {
+.contact__container {
   background: #fcfaf3;
   padding: 20px 30px;
   max-width: 600px;
@@ -152,7 +152,7 @@ body {
   color: #252222;
 }
 
-.contact-container h1 {
+.contact__container h1 {
   margin-bottom: 20px;
   font-size: 24px;
   color: #073419;
@@ -164,7 +164,7 @@ form {
   gap: 15px;
 }
 
-.form-group {
+.form__group {
   text-align: left;
 }
 
@@ -624,6 +624,10 @@ body {
 .footer__social {
   display: flex;
   gap: 1rem;
+}
+
+:any-link {
+  color: #fdcdd6;
 }
 
 .footer__social-link {

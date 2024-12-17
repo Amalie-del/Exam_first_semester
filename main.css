@@ -1,224 +1,224 @@
 /* General Reset */
 body {
-  margin: 0 auto;
-  font-family: 'Roboto';
+  margin: 0 auto; /*fjerner standard margin og centrerer indholdet horisontalt*/
+  font-family: 'Roboto'; /*Indstiller skrifttypen til Roboto*/
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+  list-style: none; /*Fjerner punktopstilling fra lister*/
+  padding: 0; /*Fjerner indre afstand */
+  margin: 0; /*Fjerner ydre margin*/
 }
 
 /* Navigation Bar */
 .navigationsbar {
-  display: flex;
-  width: 100%;
-  justify-content: space-between;
-  color: #073419;
-  background: #d1a473;
+  display: flex; /*Gør navigationsbjælken fleksibel og tilpasser elementerne i en række*/
+  width: 100%; /*Sørger for at bjælen fylder hele bredden*/
+  justify-content: space-between; /*Fordeler elementerne med plads imellem dem*/
+  color: #073419; /*tekstfarve*/
+  background: #d1a473; /*Baggrundsfarve*/
 }
 
 .nav__links {
-  display: flex;
-  align-items: center;
-  margin: 0 30px;
+  display: flex; /*Gør linksektionen fleksibel og tilpasser elementerne i en række*/
+  align-items: center; /*Centrerer elementerne lodret*/
+  margin: 0 30px; /*Tilføjer margin til højre og venstre*/
 }
 
 .nav__links a {
-  color: #fcfaf3;
-  text-decoration: none;
+  color: #fcfaf3; /*Linkfarve*/
+  text-decoration: none; /*Fjerner understregning fra links*/
 }
 
 .nav__links li {
-  margin-left: 25px;
+  margin-left: 25px; /*Tilføjer mellemrumj mellem listeelementerne*/
 }
 
 .navigationsbar__logo {
-  margin-left: 30px;
-  font-family: 'Monsieur La Doulaise';
-  font-style: italic;
-  color: #fcfaf3;
-  font-size: x-large;
-  margin: 12px;
+  margin-left: 30px; /*Tilføjer afstand til venstre for logoet*/
+  font-family: 'Monsieur La Doulaise'; /*Skrifttype*/
+  font-style: italic; /*Font style*/
+  color: #fcfaf3; /*Tekstfarve*/
+  font-size: x-large; /*Font størrelse*/
+  margin: 12px; /*Tilføjer luft omkring logoet*/
 
 }
 
 .kontaktknap {
-  background-color: #073419;
-  color: white;
-  padding: 10px;
+  background-color: #073419; /*Baggrundsfarve*/
+  color: white; /*Tekstfarve*/
+  padding: 10px; /*Tilføjer indre padding*/
 }
 
 .kontaktknap a {
-  color: #fcfaf3;
+  color: #fcfaf3; /*Linkfarve*/
 }
 
 /* Header Section */
 header {
-  width: 100vw;
-  height: 100vh;
-  background-position: bottom;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0;
+  width: 100vw; /*Fylder hele bredden af viewporten*/
+  height: 100vh; /*Fylder hele højden af viewporten*/
+  background-position: bottom; /*Placerer baggrundsbilledet nederst*/
+  background-size: cover; /*Sørger for at baggrunden fækker hele området*/
+  display: flex; /*Gør header fleksibel*/
+  align-items: center; /*Centrerer indholdet lodret*/
+  justify-content: center; /*Centrerer indholdet vandret*/
+  margin: 0; /*Fjerner ydre margin*/
 }
 
 .header__content {
-  margin-bottom: 150px;
-  color: #d1a473;
-  text-align: center;
+  margin-bottom: 150px; /*Tilføjer afstand til bunden*/
+  color: #d1a473; /*Tekstfarve*/
+  text-align: center; /*Centrerer teksten*/
 }
 
 .header__content h1 {
-  font-size: 150px;
-  padding-top: 50px;
-  margin-left: 50px;
-  font-family: 'Monsieur La Doulaise';
-  color: #fcfaf3;
-  font-style: italic;
+  font-size: 150px; /*Font størrelse*/
+  padding-top: 50px; /*Tilføjer indre afstand til toppen*/
+  margin-left: 50px; /*Tilføjer margin til venstre*/
+  font-family: 'Monsieur La Doulaise'; /*Skrifttype*/
+  color: #fcfaf3; /*Tekstfarve*/
+  font-style: italic; /*Font style*/
 }
 
 .header__content h2 {
-  margin-top: 50px;
-  margin-bottom: 30px;
-  color: #fcfaf3;
-  font-style: italic;
-  font-family: 'Roboto';
+  margin-top: 50px; /*Tilføjer afstand til toppen*/
+  margin-bottom: 30px; /*Tilføjer afstand til bunden*/
+  color: #fcfaf3; /*Tekstfarve*/
+  font-style: italic; /*Font style*/
+  font-family: 'Roboto'; /*Skrifttype*/
 }
 
 .ctn {
-  padding: 8px 15px;
-  background: #d1a473;
-  color: #073419;
+  padding: 8px 15px; /*Tilføjer indre afstand rundt om knappen*/
+  background: #d1a473; /*Baggrundsfarve*/
+  color: #073419; /*Tekstfarve*/
 }
 
 .menu-btn {
-  position: absolute;
-  top: 30px;
-  right: 30px;
-  width: 40px;
-  cursor: pointer;
+  position: absolute; /*Positionerer knappen i forhold til sin nærmeste forælder*/
+  top: 30px; /*Flytter knappen sagte px fra toppen*/
+  right: 30px; /*Flytter knappen sagte px fra højre*/
+  width: 40px; /* Gør knappen sagte px bred*/
+  cursor: pointer; /*Ændrer markøren til en hånd ved hover*/
 }
 
 /* Background for Home */
 body.home {
-  background-image: url("tasken.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+  background-image: url("tasken.jpg"); /*Baggrundsbillede*/
+  background-size: cover; /*Sørger for at billede dækker hele baggrunden*/
+  background-position: center; /*Centererer billedet*/
+  background-repeat: no-repeat; /*Forhindrer gentagelse af billedet*/
 }
 
 /*home for phones*/
 @media (max-width: 768px) {
   .header-content h1 {
-    font-size: 6rem; 
-    margin: 10%;
+    font-size: 6rem;  /*Reduverer overskriftens størrelse for mindre skærme*/
+    margin: 10%; /*Tilføjer margin omkring teksten*/
   }
 
 }
 
 @media (max-width: 480px) {
   .header-content h1 {
-    font-size: 6rem;
+    font-size: 6rem; /*Fastholder samme størrelse som før*/
   }
 }
 
 
 /* Contact Page Styles */
 body {
-  background-color: #252222;
-  color: #252222;
+  background-color: #252222; /*Baggrundsfarve*/
+  color: #252222; /*Tekstfarve*/
 }
 
 .wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
+  display: flex; /*Gør wrapperen fleksibel for at tilpasse indholdet*/
+  justify-content: center; /*Centrerer indholdet vandret*/
+  align-items: center; /*Centrerer indholdet lodret*/
+  min-height: 100vh; /*Giver wrapperen en minimum højde, så den dækker hele skærmhøjden*/
 }
 
 .contact__container {
-  background: #fcfaf3;
-  padding: 20px 30px;
-  max-width: 600px;
-  width: 100%;
-  box-shadow: 0 4px 12px #252222;
-  border-radius: 8px;
-  text-align: center;
-  margin: 10vh auto 0;
-  color: #252222;
+  background: #fcfaf3; /*Baggrundsfarve*/
+  padding: 20px 30px; /*Tilføjer indre afstand - top/bund og siderne*/
+  max-width: 600px; /*Begrænser containerens bredde*/
+  width: 100%; /*Gør containeren fleksibel til mindre skærme*/
+  box-shadow: 0 4px 12px #252222; /*Tilføjer en skyggeeffekt*/
+  border-radius: 8px; /*Giver runde hjørner til containeren*/
+  text-align: center; /*Centrerer teksten indeni containeren*/
+  margin: 10vh auto 0; /*Tilføjer 10% margin ovenfor og centrerer containeren horisontalt*/
+  color: #252222; /*Tekstfarve*/
 }
 
 .contact__container h1 {
-  margin-bottom: 20px;
-  font-size: 24px;
-  color: #073419;
+  margin-bottom: 20px; /*Tilføjer margin til bunden*/
+  font-size: 24px; /*Skriftstørrelse*/
+  color: #073419; /*Tekstfarve*/
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
+  display: flex; /*Gør formen fleksibel*/
+  flex-direction: column; /*Arrangerer indholdet i en kolonne*/
+  gap: 15px; /*Tilføjer mellemrum mellem elementer*/
 }
 
 .form__group {
-  text-align: left;
+  text-align: left; /*Justerer teksten til venstre*/
 }
 
 label {
-  font-size: 14px;
-  font-weight: bold;
-  margin-bottom: 5px;
-  display: inline-block;
+  font-size: 14px; /*Tekststørrelse*/
+  font-weight: bold; /*Gør teksten fed*/
+  margin-bottom: 5px; /*Tilføjer afstand under labelen*/
+  display: inline-block; /*Sikrer at label opfører sig som en blok for korrekt placering*/
 }
 
 input, textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #fcfaf3;
-  border-radius: 4px;
-  font-size: 16px;
-  background-color: #fcfaf3;
-  color: #252222;
+  width: 100%; /*Gør input og tekstområde samme bredde som containeren*/
+  padding: 10px; /*Tilføjer indre afstand*/
+  border: 1px solid #252222; /*Kantfarve*/
+  border-radius: 4px; /*Giver rundehjørner til kanten*/
+  font-size: 16px; /*Tekststørrelse*/
+  background-color: #fcfaf3; /*Baggrundsfarve*/
+  color: #252222; /*Tekstfarve*/
 }
 
 input:focus, textarea:focus {
-  outline: none;
-  border-color: #073419;
-  box-shadow: 0 0 4px #252222;
+  outline: none; /*Fjerner standardfokusrammen*/
+  border-color: #073419; /*Kantfarve*/
+  box-shadow: 0 0 4px #252222; /*Skyggeeffekt*/
 }
 
 textarea {
-  resize: vertical;
-  min-height: 100px;
+  resize: vertical; /*Tillader kun vertikal ændring af tekstfeltetsstørrelse*/
+  min-height: 100px; /*Sætter minimumshøjde*/
 }
 
 button {
-  padding: 12px 20px;
-  background-color: #073419;
-  color: #fcfaf3;
-  border: none;
-  border-radius: 4px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out;
+  padding: 12px 20px; /*Tilføjer indre afstand top/bund og siderne*/
+  background-color: #073419; /*Baggrundsfarve*/
+  color: #fcfaf3; /*Tekstfarve*/
+  border: none; /*Fjerner kantlinje*/
+  border-radius: 4px; /*Giver runde hjørner til knappen*/
+  font-size: 16px; /*Tekststørrelse*/
+  cursor: pointer; /*Ændrer markøren til en hånd ved hover*/
+  transition: background-color 0.3s ease-in-out; /*Tilføjer en overgangseffekt ved hover*/
 }
 
 button:hover {
-  background-color: #d1a473;
+  background-color: #d1a473; /*Baggrundsfarve ved hover*/
 }
 
 @media (max-width: 768px) {
   .contact-container {
-      padding: 20px;
+      padding: 20px; /*Tilpasser containerens indre afstand til mindre skærme*/
   }
 
   button {
-      padding: 10px 15px;
-      font-size: 14px;
+      padding: 10px 15px; /*Reducerer knappens indre afstand for mindre skærme*/
+      font-size: 14px; /*Reducerer knappens tekststørrelse for mindre skærme*/
   }
 }
 

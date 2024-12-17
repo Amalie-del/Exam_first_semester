@@ -225,204 +225,204 @@ button:hover {
 /* Portfolio Page */
 
 body {
-  background-color: #252222;
-  color: #FFFFFF;
-  margin: 0 auto;
+  background-color: #252222; /*Baggrundsfarve*/
+  color: #FFFFFF; /*Tekstfarve*/
+  margin: 0 auto; /*Centrerer indholdet og fjerner standard margin*/
 }
 
 .container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 20px;
+  max-width: 1200px; /*Sætter maks bredde for containeren*/
+  margin: 0 auto; /*Centrerer containeren på siden*/
+  padding: 20px; /*Tilføjer invendig afstand på sagte px*/
 }
 
 .header {
-  text-align: center;
-  margin-bottom: 20px;
+  text-align: center; /*Centrerer overskriften vandret*/
+  margin-bottom: 20px; /*Tilføjer afstand under headeren*/
 }
 
 .header h1 {
-  color: #FFFFFF;
-  font-size: 3rem;
-  margin: 0;
+  color: #fcfaf3; /*Tekstfarve*/
+  font-size: 3rem; /*Tekststørrelse*/
+  margin: 0; /*Fjerner margin for h1*/
 }
 
 .slideshow {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  background-color: #252222;
+  position: relative; /*Gør det muligt at positionere billeder absolut i forhold til slideshow*/
+  width: 100%; /*Sætter bredden til 100%*/
+  height: 100vh; /*Højde svarende til hele viewportens højde*/
+  overflow: hidden; /*Skjuler indhold der går udover containeren*/
+  background-color: #252222; /*Baggrundsfarve*/
 }
 
 .image-slideshow {
-  position: relative;
-  width: 100%;
-  height: 100%;
+  position: relative; /*Positionen bruges til absolut placerede billeder*/
+  width: 100%; /*Fylder hele bredden*/
+  height: 100%; /*Fylder hele højden*/
 }
 
 .image-slideshow img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-  z-index: 0;
+  position: absolute; /*Absolut positionering indenfor slideshow container*/
+  top: 0; /*Placerer billedet øverst*/
+  left: 0; /*Placerer billedet til venstre*/
+  width: 100%; /*Billedet fylder hele bredden*/
+  height: 100%; /*Billedet fyldet hele højden*/
+  object-fit: cover; /*Sørger for at billedet dækker hele området uden at blive forvrænget*/
+  opacity: 0; /*Gør billedet usynligt som udgangspunkt*/
+  transition: opacity 1s ease-in-out; /*Blød overgang for synlighed*/
+  z-index: 0; /*Sætter billedet bag andre elementer*/
 }
 
 .image-slideshow .slide.active {
-  opacity: 1;
-  z-index: 1;
+  opacity: 1; /*Gør det aktive billede synligt*/
+  z-index: 1; /*Placerer det aktive billede øverst*/
 }
 .portfolio-section {
-  scroll-snap-align: start;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 70px
+  scroll-snap-align: start; /*Starter sektionen ved scrolling*/
+  display: flex; /*Bruger flexbox til centrering*/
+  align-items: center; /*Centrerer indholdet lodret*/
+  justify-content: center; /*Centrerer indholdet vandret*/
+  padding: 70px /*Tilføjer afstand rundt om sektionen*/
 }
 
 .portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  width: 100%;
-  height: auto;
-  background-color: #fcfaf31a;
+  display: grid; /*Bruger grid-layout*/
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /*To kolonner med samme størrelse*/
+  width: 100%; /*Fylder hele bredden*/
+  height: auto; /*Automatisk højde afhængigt af indholdet*/
+  background-color: #fcfaf31a; /*Baggrundsfarve*/
 }
 
 .portfolio-grid > .grid-gallery {
-  display: grid;
-  aspect-ratio: 1 / 1;
-  align-items: center;
-  justify-items: center;
+  display: grid; /*Bryger grid-layout*/
+  aspect-ratio: 1 / 1; /*Beholder en kvadratisk form*/
+  align-items: center; /*Centrerer indholdet vandret*/
+  justify-items: center; /*Centrerer indholdet vandret*/
 }
 
 
 .portfolio-text {
-  background: #d1a473;
-  color: #073419;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  font-size: 1.5rem;
-  padding: 5px;
-  text-align: center;
+  background: #d1a473; /*Baggrundsfarve*/
+  color: #073419; /*Tekstfarve*/
+  display: flex; /*Bruger flexbox til centrering*/
+  flex-direction: column; /*Placerer indholdet i en kolonne*/
+  justify-content: center; /*Centrerer indholdet lodret*/
+  align-items: center; /*Centrerer indholdet vandret*/
+  font-size: 1.5rem; /*Tekststørrelse*/
+  padding: 5px; /*Tilføjer indvendig afstand*/
+  text-align: center; /*Centrerer teksten*/
 }
 .portfolio-text h3 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-  color: #073419;
+  font-size: 3rem; /*Tekststørrelse*/
+  margin-bottom: 10px; /*Tilføjer afstand under overskriften*/
+  color: #073419; /*Tekstfarve*/
 }
 
 .portfolio-text p {
-  font-size: 2rem;
-  line-height: 1.5;
-  color: #073419;
+  font-size: 2rem; /*Tekststørrelse*/
+  line-height: 1.5; /*Tilføjer linjeafstand*/
+  color: #073419; /*Tekstfarve*/
 }
 
 .portfolio__title {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: #FFFFFF;
-  font-size: 3rem;
-  text-align: center;
-  z-index: 2;
-  margin: 0;
+  position: absolute; /*Absolut position i forhold til forældreelement*/
+  top: 20%; /*Placerer titlen 20% fra toppen*/
+  left: 50%; /*Centrerer titlen vandret*/
+  transform: translate(-50%, -50%); /*Finjusterer centreringen*/
+  color: #fcfaf3; /*Tekstfarve*/
+  font-size: 3rem; /*Tekststørrelse*/
+  text-align: center; /*Centrerer teksten*/
+  z-index: 2; /*Placerer titlen øverst*/
+  margin: 0; /*Fjerner margin*/
 }
 
 .portfolio-images {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  display: flex; /*Bruger flexbox*/
+  flex-direction: column; /*arrangerer billederne i en kolonne*/
+  justify-content: center; /*Centrerer billederne lodret*/
+  align-items: center; /*Centrerer billederne vandret*/
 }
 
 .portfolio-images img {
-  width: auto;
-  height: auto;
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  margin: auto;
-  display: block;
+  width: auto; /*Automatisk bredde*/
+  height: auto; /*Automatisk højde*/
+  max-width: 100%; /*Sørger for at billederne ikke overstiger containerens bredde*/
+  max-height: 100%; /*Sørger for at billederne ikke overstiger containerens højde*/
+  object-fit: contain; /*Sørger for at billedet passer uden at blive beskåret*/
+  margin: auto; /*Centrerer billedet*/
+  display: block; /*Viser billedet som blok-element*/
 }
 
 .image-container img {
-  max-width: 100%;
-  max-height: 100%;
-  object-fit: contain;
-  display: none;
+  max-width: 100%; /*Indstiller maks billedebredde til 100% af containerens bredde*/
+  max-height: 100%; /*Indstiller maks billedebredde til 100% af containerens højde*/
+  object-fit: contain; /*Sørger for at billedet skaleres så det ikke bliver beskåret*/
+  display: none; /*Skjuler billederne som standard*/
 }
 
-.image-container img.active {
-  display: block;
+.image-container img.active { /*Aktive billeder bliver vist*/
+  display: block; /*Gør det aktive billede synligt*/
 }
 
 .grid-gallery {
-  position: relative;
-  width: 80%;
-  margin: auto;
-  text-align: center;
+  position: relative; /*Gør det muligt at placere elementer relativt indenfor*/
+  width: 80%; /*Sætter bredden til 80%*/
+  margin: auto; /*Centrerer elementet horisontalt*/
+  text-align: center; /*Centrerer teksten*/
 }
 
 .image-container {
-  position: relative;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative; /*Gør containeren relativ så billeder kan placeres absolut*/
+  width: 100%; /*Fylder hele bredden af forældreelementet*/
+  display: flex; /*Bruger flexbox for layout*/
+  justify-content: center; /*Centrerer indholdet horisontalt*/
+  align-items: center; /*Centrerer indholdet vertikalt*/
 }
 
 .video-frame {
-    width: 100%;
-    max-width: 560px;
-    height: 315px;
-    border: none;     
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px #252222;
-    margin: 20px auto; 
-    display: block;    
+    width: 100%; /*Fylder hele bredden af containeren*/
+    max-width: 560px; /*Maksimal bredde på videoen*/
+    height: 315px; /*Fast højde*/
+    border: none; /*Fjerner kanten rundt om videoen*/  
+    border-radius: 8px; /*Giver videoen afrundede hjørner*/
+    box-shadow: 0 4px 8px #252222; /*Tilføjer en skyggeeffekt omkring videoen*/
+    margin: 20px auto; /*Tilføjer margin og centrerer videoen*/
+    display: block; /*Gør videoen til et blok-element*/
 }
 
 .animation {
-  position: relative;
-  width: 100%;
-  height: auto;
-  justify-content: center;
-  align-items: center;
+  position: relative; /*Gør animationen relativ i forhold til containeren*/
+  width: 100%; /*Fylder hele bredden*/
+  height: auto; /*Automatisk højde*/
+  justify-content: center; /*Centrerer indholdet lodret*/
+  align-items: center; /*Centrerer indholdet vertikalt*/
 }
 
 /*portfolio for phone*/
 @media (max-width: 768px) {
   .portfolio-grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1;
+    grid-template-columns: repeat(2, minmax(0, 1fr)); /*To kolonner af lige stor størrelse*/
+    width: 100%; /*Fylder hele bredden*/
+    height: auto; /*Automatisk højde*/
+    aspect-ratio: 1; /*Bevarer et kvadratisk forhold*/
   }
 
   .portfolio-text h3 {
-    font-size: 1.2rem; 
+    font-size: 1.2rem; /*Tekststørrelse*/
   }
 
   .portfolio-text p {
-    font-size: 1rem; 
+    font-size: 1rem; /*Tekststørrelse*/
   }
 }
 
 @media (max-width: 480px) {
   .portfolio-text h3 {
-    font-size: 1rem;
+    font-size: 1rem; /*Tekststørrelse*/
   }
 
   .portfolio-text p {
-    font-size: 0.6rem;
+    font-size: 0.6rem; /*Tekststørrelse*/
   }
 }
 
@@ -430,114 +430,114 @@ body {
 /* About me */
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: #252222;
-  color: #fcfaf3;
-  margin: 0;
-  padding: 0;
-  line-height: 1.6;
-  height: auto;
-  width: 100%;
-      overflow-x: hidden;
+  font-family: 'Roboto'; /*Skriftype*/
+  background-color: #252222; /*Baggrundsfarve*/
+  color: #fcfaf3; /*Tekstfarve*/
+  margin: 0; /*Fjerner standard margin fra body*/
+  padding: 0; /*Fjerner standard padding fra body*/
+  line-height: 1.6; /*Sætter linjeafstand*/
+  height: auto; /*Automatisk højde*/
+  width: 100%; /*Sætter bredden til 100%*/
+      overflow-x: hidden; /*Skjuler horisontalt indhold der går udover skærmen*/
   }
 
 
 
 /* Container */
 .page {
-  display: grid;
-  grid-template-columns: 1fr;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 3rem;
-  height: auto;
+  display: grid; /*Bruger grid layout*/
+  grid-template-columns: 1fr; /*Sææter én kolonne til grid layoutet*/
+  gap: 2rem; /*Sætter mellemrum*/
+  max-width: 1200px; /*Maksimal bredde for containeren*/
+  margin: 2rem auto; /*Tilføjer margin på toppen og bunden samt centrerer containeren*/
+  padding: 3rem; /*Tilføjer padding omkring containeren*/
+  height: auto; /*Højden af containeren justeres automatisk*/
 }
 
 .about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
+  display: flex; /*Bryger flexbox til layout*/
+  flex-wrap: wrap; /*Tillader elementer at bryde linjen, hvis der ikke er nok plads*/
+  align-items: center; /*tilføjer padding omkring containeren*/
+  gap: 2rem; /*Tilføjer mellemrum*/
 }
 
 .about__profile-picture {
-  width: 200px;
-  height: auto;
-  object-fit: cover;
+  width: 200px; /*Sætter bredden af profilbilledet*/
+  height: auto; /*Automatisk højde*/
+  object-fit: cover; /*Billedet fylde hele containeren uden at ændre proportionerne*/
 }
 
 .about__text {
-  flex: 1;
+  flex: 1; /*Giver tekstområdet mulighed for at fylde resten af pladsen*/
 }
 
 .about h1 {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
+  font-size: 2.5rem; /*Tekststørrelse*/
+  margin-bottom: 1rem; /*Tilføjer margin under overskriften*/
 }
 
 .about p {
-  font-size: 1.2rem;
-  color: #fcfaf3;
+  font-size: 1.2rem; /*Tekststørrelse*/
+  color: #fcfaf3; /*Tekstfarve*/
 }
 
 /* Skills Section */
 .skills, .programs {
-  text-align: center;
+  text-align: center; /*Centrerer teksten i både 'skills' og i 'programs'*/
 }
 
 .skills h2, .programs h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+  font-size: 2rem; /*Tekststørrelse*/
+  margin-bottom: 1rem; /*Tilføjer margin under overskriften*/
 }
 
 .skill__list, .program__list {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1rem;
-  justify-content: center;
+  display: grid; /*Bruger grid layout*/
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /*Laver to kolonner, der tilpasser sig skærmstørrelsen*/
+  gap: 1rem; /*Tilføjer mellemrum mellem elementerne i listen*/
+  justify-content: center; /*Centrerer listen horisontalt*/
 }
 
 .skill__item, .program__item {
-  padding: 1rem;
-  background-color: #ffb6c1;
-  color: #073419;
-  border-radius: 8px;
-  font-size: 1rem;
-  text-align: center;
-  font-weight: 500;
-  box-shadow: 0 4px 8px #252222;
+  padding: 1rem; /*Tilføjer padding omkring hvert item*/
+  background-color: #ffb6c1; /*Baggrundsfarve*/
+  color: #073419; /*Tekstfarve*/
+  border-radius: 8px; /*Giver hvert item afrundede hjørner*/
+  font-size: 1rem; /*Tekststørrelse*/
+  text-align: center; /*Centrerer teksten inde i hvert item*/
+  font-weight: 500; /*Gør skriften fed*/
+  box-shadow: 0 4px 8px #252222; /*Tilføjer en skygge*/
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
   .about {
-      flex-direction: column;
-      text-align: center;
+      flex-direction: column; /*Skrifter layout til en vertifal opstilling*/
+      text-align: center; /*Centrerer teksten*/
   }
 
   .profile-picture {
-      margin: 0 auto;
+      margin: 0 auto; /*Centrerer profilbilledet*/
   }
 }
 
 
 @media (max-width: 768px) {
     .aboutme {
-        padding: 15px;
+        padding: 15px; /*Tilføjer padding til about me sektionen*/
     }
 
     .profile-picture {
-        width: 120px;
-        height: 120px;
+        width: 120px; /*Sætter profilbilledets bredde til sagte px*/
+        height: 120px; /*Sætter profilbilledets højde til sagte px*/
     }
 
     .hero h1 {
-        font-size: 2rem;
+        font-size: 2rem; /*Tekststørrelse*/
     }
 
     .skills li {
-        font-size: 0.8rem;
+        font-size: 0.8rem; /*Tekststørrelse*/
     }
 }
 
@@ -545,112 +545,112 @@ body {
 /* Responsive Adjustments */
 @media (max-width: 768px) {
   .grid {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      grid-template-columns: repeat(2, minmax(0, 1fr)); /*Skaber to kolonner, der tilpasser sig bredden*/
   }
 
   .slideshow {
-      aspect-ratio: 2 / 1;
+      aspect-ratio: 2 / 1; /*Sætter billeders aspektforhold til 2:1 for bedre tilpasning på små skærme*/
   }
 }
 
 @media (max-width: 480px) {
   .grid {
-      grid-template-columns: 1fr;
+      grid-template-columns: 1fr; /*Ændrer layout til en kolonne på små skærme*/
   }
 
   .slideshow {
-      aspect-ratio: 1.5 / 1;
+      aspect-ratio: 1.5 / 1; /*Ændrer aspektforholdet til 1.5:1 for bedre visning på små skærme*/
   }
 }
 
 /* Footer Section */
 .footer {
-  background-color: #252222;
-  color: #fcfaf3;
-  padding: 1.5rem 0;
-  font-family: 'Roboto';
+  background-color: #252222; /*Baggrundsfarve*/
+  color: #fcfaf3; /*Tekstfarve*/
+  padding: 1.5rem 0; /*Tiløfjer padding til toppen og bunden*/
+  font-family: 'Roboto'; /*Skrifttype*/
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
-  margin: 2rem auto;
-  padding: 0 2rem;
+  display: flex; /*Bruger flexbox layout til footer*/
+  justify-content: space-between; /*Fordeler elementerne ligeligt med plads mellem*/
+  align-items: center; /*Centrerer elementerne vertikalt*/
+  max-width: 1200px; /*Maksimal bredde for containeren*/
+  margin: 2rem auto; /*Centrerer containeren og tilføjer margin på toppen og bunden*/
+  padding: 0 2rem; /*Tilføjer padding i siderne*/
 }
 
 /* Left Section: Contact Info */
 .footer__contact p {
-  margin: 2px;
-  font-size: 0.9rem;
-  padding: 2px;
+  margin: 2px; /*Tilføjer margin onkring hver paragraf*/
+  font-size: 0.9rem; /*Skriftstørrelsen*/
+  padding: 2px; /*Tilføjer padding omkring teksten*/
 }
 
 .footer__contact a {
-  color: #fcfaf3;
-  text-decoration: none;
+  color: #fcfaf3; /*Tekstfarve*/
+  text-decoration: none; /*Fjerner understregning af links*/
 }
 
 .footer__contact a:hover {
-  text-decoration: underline;
+  text-decoration: underline; /*Tilføjer understregning når musen holdes over*/
 }
 
 /* Middle Section: Logo */
-.footer__logo h3 {
-  margin: 0;
-  font-family: 'Monsieur La Doulaise', cursive;
-  font-size: 2.8rem;
-  color: #fcfaf3;
-  text-align: center;
+.footer__logo h4 {
+  margin: 0; /*Fjerner margin fra overskriften*/
+  font-family: 'Monsieur La Doulaise'; /*Skrifttype*/
+  font-size: 2.8rem; /*Skriftstørrelse*/
+  color: #fcfaf3; /*Tekstfarve*/
+  text-align: center; /*Centrerer logoet*/
 }
 
 .footer__logo a {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center; 
-  text-align: center; 
+  display: flex; /*Bruger flexbox layout*/
+  flex-direction: column; /*Arrangerer elementerne vertikalt*/
+  align-items: center; /*Centrerer elementerne horisontalt*/
+  text-align: center; /*Centrerer teksten inde i linket*/
 }
 
 .footer__text {
-  margin-top: 0.5rem;
-  font-size: 0.8rem;
-  color: #fcfaf3; 
-  text-align: center;
+  margin-top: 0.5rem; /*Tilføjer margin på toppen af teksten*/
+  font-size: 0.8rem; /*Skriftstørrelse*/
+  color: #fcfaf3; /*Tekstfarve*/
+  text-align: center; /*Centrerer teksten*/
 }
 
 
 /* Right Section: Social Links */
 .footer__social {
-  display: flex;
-  gap: 1rem;
+  display: flex; /*Bruger flexbox layout*/
+  gap: 1rem; /*Tilføjer mellemrum mellem sociale links*/
 }
 
 :any-link {
-  color: #fdcdd6;
+  color: #fdcdd6; /*Tekstfarve på links*/
 }
 
 .footer__social-link {
-  color: #fdcdd6;
-  text-decoration: none;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  color: #fdcdd6; /*Farve på links*/
+  text-decoration: none; /*Fjerner understregning fra links*/
+  font-size: 1rem; /*Tekststørrelse*/
+  transition: color 0.3s ease; /*Tilføjer en farveændringsanimation når musen hover*/
 }
 
 .footer__social-link:hover {
-  color: #fdcdd6; 
-  text-decoration: underline;
+  color: #fdcdd6; /*Farve ved hovering*/
+  text-decoration: underline; /*Tilføjer en understregning når musen føres over linket*/
 }
 
 /* Responsive Design for Footer */
 @media (max-width: 768px) {
   .footer-container {
-    flex-direction: column;
-    text-align: center;
-    gap: 1rem;
+    flex-direction: column; /*Ændrer lauoutet til vertikal opstilling af footer-elementer*/
+    text-align: center; /*Centrerer tekst*/
+    gap: 1rem; /*Tilføjer mellemrum*/
   }
 
   .footer-social {
-    justify-content: center;
+    justify-content: center; /*Centrerer de sociale links horisontalt*/
   }
 }

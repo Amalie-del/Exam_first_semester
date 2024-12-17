@@ -1,60 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--Dokumenttype og angiver sproget som engelsk-->
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Miertzie</title>
+    <title>Miertzie</title> <!--Angiver titlen-->
 
-<!--link til google fonts-->
+<!--Link til google fonts-->
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Imperial+Script&family=Monsieur+La+Doulaise&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-    <!-- link til CSS -->
+    <!-- Link til CSS -->
      <link rel="stylesheet" href="main.css">
+     
      <style>
-        html, body {
-            overflow-x: hidden;
+        html, body  {
+            overflow-x: hidden; /*Hvis indholdet løber over, forhindrer denne kode horisontal scrolling */
         }
     </style>
 </head>
-<body class="home">
-    <!--navigationsbar-->
-    <nav class="navigationsbar">
-        <h3 class="navigationsbar__logo">Miertzie</h3>
-        <ul class="nav__links">
-            <li class="nav__item hjem"><a href="home.html" class="nav__link">Home</a></li>
-            <li class="nav__item projekter"><a href="portfolio.html" class="nav__link">Portfolio</a></li>
-            <li class="nav__item om mig"><a href="about.html" class="nav__link">About me</a></li>
-            <li class="nav__item kontaktknap"><a href="contact.html" class="nav__link">Contact me</a></li>
+
+<body class="home"> <!--Body-tag til specifik styling af side-->
+    <!--Navigationsbar-->
+    <nav class="navigationsbar"> <!--definerer navigationssektionen-->
+        <h3 class="navigationsbar__logo">Miertzie</h3> <!--Websites logo-->
+        <ul class="nav__links"> <!--Liste over navigationslinks-->
+            <li class="nav__item hjem"><a href="home.html" class="nav__link">Home</a></li> <!--Link til home-siden-->
+            <li class="nav__item projekter"><a href="portfolio.html" class="nav__link">Portfolio</a></li> <!--Link til portfolio-siden-->
+            <li class="nav__item om mig"><a href="about.html" class="nav__link">About me</a></li> <!--Link til about me-siden-->
+            <li class="nav__item kontaktknap"><a href="contact.html" class="nav__link">Contact me</a></li> <!--Link til contact me-siden-->
         </ul>
-    
     </nav>
+
+    <!--Headersektionen-->
     <header>
-        <div class="header__content">
-            <h1 class="header__title"> Miertzie </h1>
-            <div class="header_line"></div>
-            <h2 class="header_subtitle"> Grow your business in a new and creative way</h2>
+        <div class="header__content"> <!--Beholder til headerindholdet-->
+            <h1 class="header__title"> Miertzie </h1> <!--Hovedtitel på hjemmesiden-->
+            <div class="header_line"></div> <!--Dekorativ linje under titlen-->
+            <h2 class="header_subtitle"> Grow your business in a new and creative way</h2> <!--Undertitel-->
             
         </div>
     </header>
     <!--Footer section-->
     <footer class="footer">
-        <div class="footer__container">
+        <div class="footer__container"> <!--beholder til footerindholdet-->
           <!-- Left Section: Contact Info -->
-          <div class="footer__contact">
+          <div class="footer__contact"> <!--viser kontaktinformation-->
             <p>E-mail: <a href="mailto:miertzie@gmail.com" class="footer__link">Miertzie@gmail.com</a></p>
             <p>Phone: <a href="tel:+4528406435" class="footer__link">+45 28 40 64 35</a></p>
           </div>
       
           <!-- Middle Section: Logo or Navigation -->
-          <div class="footer__logo">
+          <div class="footer__logo"> <!--Viser logo og ophavsretstekst-->
             <h3 class="footer__title">Miertzie</h3>
             <p class="footer__text">&copy; 2023 Innovideas. All Rights Reserved.</p>
           </div>
       
           <!-- Right Section: Social Media Links -->
-          <div class="footer__social">
+          <div class="footer__social"> <!--Links til sociale medie profiler-->
             <a href="https://www.instagram.com/miertzie/" target="social-account" class="footer_social-link">Instagram</a>
             <a href="https://www.linkedin.com/in/amalie-odgaard-8a8634341/" target="social-account" class="footer_social-link">LinkedIn</a>
           </div>
